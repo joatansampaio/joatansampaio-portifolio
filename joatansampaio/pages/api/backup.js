@@ -1,0 +1,4 @@
+{/* <div className="animate-circ0 before:content-html -rotate-90 z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 bg-red-400 origin-left"></div>
+<div className="animate-circ180 before:content-css -rotate-90 z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 bg-red-400 origin-left"></div> 
+<div className="animate-circ45 before:content-javascript -rotate-90 z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 bg-red-400 origin-left"></div>
+<div className="animate-circ90 before:content-react -rotate-90 z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 bg-red-400 origin-left"></div>  */}

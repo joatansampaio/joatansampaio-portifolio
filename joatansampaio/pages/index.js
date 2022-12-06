@@ -1,7 +1,10 @@
+import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import SkillFloatter from '../components/FloatingBall'
+import NavBar from '../components/NavBar'
 import profile from '../public/me.jpg'
+
 
 export default function Home() {
   return (
@@ -12,11 +15,56 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-gradient-to-b from-gray-900 to-blue-900 min-h-screen'>
-        <div className='w-screen grid place-items-center'>
+      <main className='bg-gradient-to-tl from-j_main_dark to-j_main_light min-h-screen'>
+        <div className='pt-10 w-11/12 md:w-5/6 xl:w-4/6 m-auto '>
+          <NavBar />
+          <div id="profile-logo" className='absolute top-40 md:top-52 mb-16 left-1/2 -translate-x-1/2'>
+            <Image className='animate-updown rounded-full w-40 z-10 md:w-80' src={profile} alt='Joatan Sampaio' />
 
-            <Image className='rounded-full w-80' src={profile} alt='Joatan Sampaio'></Image>
-            <h1 className='py-7 text-center text-5xl'>Joatan Sampaio</h1>
+            {/* <div className="animate-circ0 before:content-css z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 origin-left"></div>
+            <div className="animate-circ45 before:content-html  z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 origin-left"></div>
+            <div className="animate-circ90 before:content-javascript  z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 origin-left"></div>
+            <div className="animate-circ180 before:content-react  z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 origin-left"></div>
+            <div className="animate-circ180 before:content-java z-20 w-32 h-0 absolute before:w-techs before:-right-1 before:-top-5 before:absolute before:h-9 top-1/2 left-1/2 origin-left"></div> */}
+
+            <SkillFloatter attr="animate-circ0 before:content-html" />
+            <SkillFloatter attr="animate-circ45 before:content-css" />
+            <SkillFloatter attr="animate-circ90 before:content-java" />
+            <SkillFloatter attr="animate-circ180 before:content-javascript" />
+            <SkillFloatter attr="animate-circ270 before:content-react" />
+
+          </div>
+          <section className='mt-72 mx-6 text-justify md:mt-100'>
+            <h1 className='py-10 font-extralight text-center text-4xl md:py-16'>Joatan Sampaio</h1>
+            <p>
+              In love with computers since 2003 when I was only 13 years old, I've had many upside downs in this area.
+              I always loved programming! My first programming language was C back in 2005 and I kept programming for at lest 2 years.
+              Most of my projects were game-related macros in C to get ahead of other players. Also, back then I worked a little bit with HTML and CSS
+              to create 2 or 3 websites; one of which I actually sold to a security camera company.
+            </p>
+            <br />
+            <p>
+              Many years later, in 2012, I got back to programming! This time, with Java. I got to learn a lot and managed to get a certification
+              in java. Soon later that, I started to attend College, where I porsued a bachelor's degree in Systems of Information, which is a computer science related program.
+            </p>
+            <br />
+            <p>
+              Unfortunatelly, I never got to the end of this one. Actually, I gave up on it at the beginning of my 4th year. The reason behind that is that I
+              started singing and playing, I made a good living out it for many years. In reality when I got into College, I was already working with that for 1 or 2 years.
+            </p>
+          </section>
+          <hr className='w-full border-blue-500 my-6' />
+          <section>
+            Projects
+          </section>
+          <hr className='w-full border-blue-500 my-6' />
+          <section>
+            Skills
+          </section>
+          <hr className='w-full border-blue-500 my-6' />
+          <section className='mb-7'>
+            Contact
+          </section>
         </div>
       </main>
 
