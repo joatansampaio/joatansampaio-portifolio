@@ -17,7 +17,7 @@ class NavBar extends Component{
     render(){
         return (
             <nav className="whitespace-nowrap flex justify-center font-extralight text-2xl">
-            <ul className='list-none inline-flex gap-5 animate-pulseslow text-blue-100' >
+            <ul className='list-none inline-flex gap-5 animate-pulseslow text-blue-50' >
               <li><a href="#">About me</a></li>
               <li><a href="#">Projects</a></li>
               <li><a href="#">Skills</a></li>

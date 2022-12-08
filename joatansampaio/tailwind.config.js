@@ -70,7 +70,18 @@ module.exports = {
           '0%' : { transform: 'rotate(30deg)' },
           '100%' : { transform: 'rotate(-330deg)' }
         },
+        rainbow: {
+          '0%' :  {backgroundPosition: 'bgPos0_0'},
+          '100%': {backgroundPosition: 'bgPos0_10'}
+        }
       },
+      backgroundPosition: {
+        bgPos0_0 :'0% 0%',
+        bgPos0_100 : '0% 100%'
+      },
+      backgroundSize: {
+        t_max: '100% 1100%',
+      }
     },
 
   },
