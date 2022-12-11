@@ -1,11 +1,26 @@
 import FloatingBall from "../Animation/FloatingBall"
 import Image from "next/image";
-import profile from "../../public/me2.png"
+import profile from "../../public/images/profpic.png"
+import { motion } from "framer-motion"
 
 function Profile() {
 
     return (
-        <div>
+        <motion.div
+            initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.5
+            }}
+            animate={{
+                x: 0,
+                opacity: 1, 
+                scale: 1
+            }}
+            transition={{
+                duration: 1
+            }}
+        >
             <div className="relative h-96">
                 <div className="absolute top-28 left-1/2 -translate-x-1/2">
                     <Image className="rounded-full w-44 z-10 animate-background md:w-80" src={profile} alt="Joatan Sampaio" />
@@ -20,7 +35,7 @@ function Profile() {
                 <div>Hi, I&apos;m <span>Joatan</span>,</div>
                 <div>I&apos;m a computer science student</div>
             </div>
-        </div>
+        </motion.div>
 
     );
 

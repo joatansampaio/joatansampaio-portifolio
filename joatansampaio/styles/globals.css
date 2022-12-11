@@ -41,14 +41,14 @@ a {
 }
 
 .intro-text{
-  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
   font-size: 56px
 }
 
 .intro-text span{
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Zen Dots', cursive;
   color: #0A9055;
-  font-weight:600;
 
   background: 
     -webkit-linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706),
@@ -58,6 +58,22 @@ a {
     background-size: 600% 100%;
     animation: gradient 8s linear infinite;
     animation-direction: alternate;
+}
+
+.skills_chartbar{
+  height: 30px;
+  margin-bottom: 15px;
+
+  background: linear-gradient(270deg, #F17C58, #E94584, #24AADB);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+.skills_chartbar_label{
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  line-height: 30px;
+  padding-left: 10px;
 }
 
 @keyframes gradient {
@@ -78,4 +94,13 @@ a {
   .square-animation {
     animation: wipe-enter 1s 1;
   }
+}
+
+@font-face {
+  font-family: 'Zen Dots';
+  src: url('../fonts/ZenDots.ttf');
+}
+@font-face{
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Light.ttf');
 }
