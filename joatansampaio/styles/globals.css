@@ -28,11 +28,54 @@ a {
     background: black;
   }
 }
-@font-face {
-  font-family: 'Inter';
-  src: url('../public/fonts/Inter-Regular.ttf')
+
+.animate-background{
+  background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+  background-size: 600% 100%;
+  animation: gradient 12s linear infinite;
+  animation-direction: alternate;
 }
-@keyframes animateBg {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 0% 100%; }
+.intro-pattern{
+  background-image: linear-gradient(#001855 1px, transparent 0), linear-gradient(90deg, #001823 1px, transparent 0);
+  background-size: 10px 10px;
+}
+
+.intro-text{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 56px
+}
+
+.intro-text span{
+  font-family: 'Chakra Petch', sans-serif;
+  color: #0A9055;
+  font-weight:600;
+
+  background: 
+    -webkit-linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706),
+    linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600% 100%;
+    animation: gradient 8s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .square-animation {
+    animation: wipe-enter 1s 1;
+  }
 }
